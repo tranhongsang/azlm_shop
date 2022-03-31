@@ -15,9 +15,9 @@ class LoginPage extends GetView<LoginController> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-          body: Column(
+    return Scaffold(
+      body: SafeArea(
+          child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           _buildTitle,
