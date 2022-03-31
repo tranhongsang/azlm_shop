@@ -13,7 +13,7 @@ class LoginController extends BaseController {
     showLoading();
     await 2.seconds.delay();
     hideLoading();
-    // Get.offAndToNamed(AppRouter.routerMain);
+    Get.offAndToNamed(AppRouter.routerMain);
   }
 
   void onForgetPassword() {}
