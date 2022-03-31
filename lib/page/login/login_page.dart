@@ -140,6 +140,7 @@ class LoginPage extends BaseScreen<LoginController> {
         currentNode: controller.focusNodeAcc,
         labelText: 'メールアドレス',
         hintText: 'example@example.com',
+        textInputType: TextInputType.emailAddress,
         iconNextTextInputAction: TextInputAction.next,
       );
 
@@ -150,6 +151,7 @@ class LoginPage extends BaseScreen<LoginController> {
         labelText: 'パスワード',
         hintText: '半角英数8文字以上',
         obscureText: true,
+        textInputType: TextInputType.visiblePassword,
         iconNextTextInputAction: TextInputAction.done,
         submitFunc: () => controller.login(),
       );
