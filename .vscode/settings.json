@@ -1,0 +1,33 @@
+{
+    "cSpell.words": [
+      "acbs",
+      "cupertino",
+      "dismisser",
+      "fluttertoast",
+      "interps",
+      "ints",
+      "junitreport",
+      "mobiledevops",
+      "NNBD",
+      "pointycastle",
+      "reorderable",
+      "rxdart",
+      "syncfusion",
+      "todos",
+      "treemap",
+      "unawaited",
+      "xlider"
+    ],
+    "eslint.alwaysShowStatus": true,
+    "dart.flutterSdkPath": ".fvm/flutter_sdk",
+    "dart.flutterRunAdditionalArgs": ["--no-sound-null-safety"],
+    // Remove .fvm files from search
+    "search.exclude": {
+      "**/.fvm": true
+    },
+    // Remove from file watching
+    "files.watcherExclude": {
+      "**/.fvm": true
+    }
+  }
+  
