@@ -13,6 +13,7 @@ class AppColor {
   static Color black400 = const Color(0xFFBEBEC3);
   static Color black500 = const Color(0xFF9F9FA4);
   static Color black800 = const Color(0xFF434347);
+  static Color black900 = const Color(0xFF222226);
 
   static Color white = const Color(0xFFFFFFFF);
   static Color lineLight = const Color(0xFFEFEFF4);

@@ -1,3 +1,4 @@
+import 'package:azlm_shop/base/base_screen.dart';
 import 'package:azlm_shop/global/app_color.dart';
 import 'package:azlm_shop/global/app_path.dart';
 import 'package:azlm_shop/page/login/login_controller.dart';
@@ -7,14 +8,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
-class LoginPage extends GetView<LoginController> {
+class LoginPage extends BaseScreen<LoginController> {
   const LoginPage({Key? key}) : super(key: key);
 
   @override
   LoginController get controller => Get.put<LoginController>(LoginController());
 
   @override
-  Widget build(BuildContext context) {
+  Widget builder() {
     return GestureDetector(
       onTap: () {
         FocusManager.instance.primaryFocus?.unfocus();
