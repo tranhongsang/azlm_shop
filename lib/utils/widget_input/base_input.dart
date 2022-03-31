@@ -153,7 +153,7 @@ class _BuildInputTextState extends State<BuildInputText> {
           // label
           labelText: widget.labelText,
           labelStyle: TextStyle(
-              fontSize: 12,
+              fontSize: 16,
               color: AppColor.primary,
               fontWeight: FontWeight.w500),
           floatingLabelBehavior: FloatingLabelBehavior.always,

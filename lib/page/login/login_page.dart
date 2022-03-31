@@ -15,44 +15,51 @@ class LoginPage extends GetView<LoginController> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-          child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          _buildTitle,
-          Expanded(
-            child: ListView(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
-              children: <Widget>[
-                const SizedBox(height: 26),
-                _buildTextOpenWith,
-                const SizedBox(height: 24),
-                _buildLoginWithOrther,
-                const SizedBox(height: 32),
-                _buildDivider,
-                const SizedBox(height: 32),
-                _buildTitleLogin,
-                const SizedBox(height: 24),
-                _buildInputAccount,
-                const SizedBox(height: 12),
-                _buildInputPassword,
-                const SizedBox(height: 12),
-                _buildForgetPassword,
-                const SizedBox(height: 12),
-                _buildButtonLogin,
-                const SizedBox(height: 40),
-                _buildCardRegister,
-                const SizedBox(height: 40),
-              ],
+    return GestureDetector(
+      onTap: () {
+        FocusManager.instance.primaryFocus?.unfocus();
+      },
+      child: Scaffold(
+        body: SafeArea(
+            child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            _buildTitle,
+            Expanded(
+              child: ListView(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                physics: const ClampingScrollPhysics(),
+                children: <Widget>[
+                  const SizedBox(height: 26),
+                  _buildTextOpenWith,
+                  const SizedBox(height: 24),
+                  _buildLoginWithOrther,
+                  const SizedBox(height: 32),
+                  _buildDivider,
+                  const SizedBox(height: 32),
+                  _buildTitleLogin,
+                  const SizedBox(height: 24),
+                  _buildInputAccount,
+                  const SizedBox(height: 24),
+                  _buildInputPassword,
+                  const SizedBox(height: 12),
+                  _buildForgetPassword,
+                  const SizedBox(height: 20),
+                  _buildButtonLogin,
+                  const SizedBox(height: 40),
+                  _buildCardRegister,
+                  const SizedBox(height: 40),
+                ],
+              ),
             ),
-          ),
-        ],
-      )),
+          ],
+        )),
+      ),
     );
   }
 
-  Divider get _buildDivider => Divider(color: AppColor.lineDark, height: 1);
+  Divider get _buildDivider =>
+      Divider(color: AppColor.lineDark, thickness: 1.6, height: 2);
 
   // title
   Container get _buildTitle => Container(

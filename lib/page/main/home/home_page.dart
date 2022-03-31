@@ -47,7 +47,10 @@ class HomePage extends GetView<HomeController> {
 
   // appbar
   AppBar get _buildAppBar => AppBar(
-        title: Image.asset(AppPath.imageAZLM).paddingOnly(left: 12),
+        title: Image.asset(
+          AppPath.imageAZLM,
+          height: 40,
+        ).paddingOnly(left: 12),
         centerTitle: false,
         actions: [
           Obx(
